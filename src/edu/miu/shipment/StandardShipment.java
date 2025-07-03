@@ -1,6 +1,6 @@
 package edu.miu.shipment;
 
-public class StandardShipment implements Shipment {
+public final class StandardShipment implements Shipment {
     private final String trackingNumber;
     private final String estimatedDelivery;
 

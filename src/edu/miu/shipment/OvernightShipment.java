@@ -1,6 +1,6 @@
 package edu.miu.shipment;
 
-public class OvernightShipment  implements Shipment {
+public final class OvernightShipment implements Shipment {
     private final String trackingNumber;
     private final String deliveryTime;
 

@@ -2,6 +2,9 @@ package edu.miu.shipment;
 
 public class ShipmentTracker {
     public static void track(Shipment shipment) {
+        if (!(shipment instanceof StandardShipment || shipment instanceof ExpressShipment || shipment instanceof OvernightShipment)) {
+            throw new IllegalArgumentException("Unsupported shipment type.");
+        }
         System.out.println(shipment.getTrackingDetails());
     }
 
@@ -13,7 +16,5 @@ public class ShipmentTracker {
         track(s1);
         track(s2);
         track(s3);
-
-        // Only the three shipment types should be allowed in this system.
     }
 }

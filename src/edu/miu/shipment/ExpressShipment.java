@@ -1,6 +1,6 @@
 package edu.miu.shipment;
 
-public class ExpressShipment implements Shipment {
+public final class ExpressShipment implements Shipment {
     private final String trackingNumber;
     private final String priorityLevel;
 
